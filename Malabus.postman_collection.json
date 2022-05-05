@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "fc3cfb6b-e25c-4891-8a8c-20ee752c261c",
+		"name": "Malabus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fname\":\"test\",\r\n    \"lname\":\"testtesste\",\r\n    \"username\":\"tsttess\",\r\n    \"birthday\":\"07/15/1993\",\r\n    \"phoneNum\":\"21335546\",\r\n    \"email\":\"mekkbenmousssa@gmail.com\",\r\n    \"password\":\"Azerty12$\",\r\n    \"job\":\"étudinat\",\r\n    \"civility\":\"Monsieur\",\r\n    \"address\":\"manouba\",\r\n    \"postalCode\":\"2010\",\r\n    \"city\":\"Bizerte\",\r\n    \"country\":\"Tunisie\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"credentels\":\"mekkiibenmoussa@gmail.com\",\r\n    \"password\":\"Azerty12$\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Agency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameagency\":\"TESte\",\r\n    \"matricule\":\"3567544M\",\r\n    \"email\":\"makkouch3@gmail.com\",\r\n    \"num_cnss\":\"1234675\",\r\n    \"business_sector\":\"Transport terrestre routier international\",\r\n    \"legal_status\":\"SARL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/agency/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"agency",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
